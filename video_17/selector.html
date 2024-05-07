@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*  element selector */
+        div{
+            background-color: red;
+        }
+        
+     /*  class selector */
+        .red{
+            background-color: rgb(84, 146, 201);
+        }
+        /*  Id selector */
+        #green {
+            background-color: rgb(150, 196, 150);
+        }
+
+         /* child selector */ 
+        div>p 
+        {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+
+        /* decendant selector */
+        div p
+        {
+            color: blue;
+            background-color: blanchedalmond;
+        }
+
+        /* universal selector */
+        *
+        {
+            margin:0; 
+            padding:0;
+        }
+        
+        /* pseudo selector  */
+        a:visited
+        {
+            color: rgb(46, 171, 77);
+        }
+        a:link
+        {
+            color: orchid
+        }
+    
+        a:active
+        {
+            background-color: palevioletred;
+        }
+            
+        a:hover
+        {
+            background-color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        i am element selector 
+        <p>i am ommmm </p>
+        <h2> yoooo</h2>
+    </div>
+
+
+    <div>
+        i am element selector 
+        <h2> yoooo</h2>
+        <p>i am ommmm </p>
+      
+    </div>
+
+
+
+     <div class="red">
+          i am red class 
+     </div>    
+
+     <div id="green">
+        i am green id 
+     </div>
+
+     <a target="_blank"  href="https://www.google.com">Go to google </a>
+     <a target="_blank"  href="https://www.facebook">Go to FB </a>
+
+</body>
+</html>

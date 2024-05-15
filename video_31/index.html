@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query </title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and  (orientation: landscape ){
+            body{
+                background-color: peru;
+            }
+            
+        }
+
+        @media screen and (max-width :455px) 
+        {
+            body {
+                background-color: aqua;
+            }
+            .boxx{
+                flex-direction: column;
+            }
+        }
+
+
+        .boxx{
+            display:flex;
+        }
+
+        .boxes {
+            width: 344px;
+            height: 344px;
+            background-color: azure;
+            padding: 3px;
+            margin: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        i am a red bofy guy
+    </div>
+    <div class="boxx">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+
+    </div>
+</body>
+
+</html>
+
+<!-- @media not/only mediatype and (expression) 
+{
+    CSS CODE ; 
+}  -->

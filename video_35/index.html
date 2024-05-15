@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>More on selectors </title>
+    <style>
+        .box:first-child {
+            background-color: lightcyan ;
+        }
+
+        .box::first-line {
+            color: palevioletred;
+        }
+        .boxes * {
+            border: 2px solid green;   
+        } 
+        .boxes ::before{
+            content: "Om is good";
+            color: tomato;
+        }
+        .boxes ::after{
+            content: "Om is not that  good";
+            color: magenta;
+        }
+
+        ::selection{
+            color: aquamarine;
+            background-color: black;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta non quaerat quasi, repellendus itaque provident voluptas, dolorum nisi sit quod nemo cupiditate praesentium explicabo obcaecati vero ad aliquid, unde dignissimos consequuntur atque dolor? Quod, mollitia inventore at cumque, voluptatem expedita amet molestias vel asperiores beatae nisi atque doloribus accusantium necessitatibus magni impedit ex dolor adipisci maiores. Aperiam dolorem tempore porro recusandae asperiores laborum voluptas vero nobis. Ad, eligendi! Commodi ipsum a dolorem similique cum eius quibusdam voluptate assumenda animi error nihil eaque, ratione hic excepturi nobis corrupti. Eaque dolorum voluptates placeat corporis eveniet iure officia, expedita tempora similique fugiat odio recusandae, nisi amet quasi ullam, modi assumenda excepturi magni reiciendis a? Consequuntur, assumenda aperiam praesentium rerum odio quia in error libero, veniam cupiditate ipsum magni repellendus ipsa accusantium ullam nulla fuga quibusdam laborum animi eos voluptatum corporis vitae quos. Tempora nulla debitis cum. Corporis impedit assumenda minus, architecto necessitatibus laboriosam odio recusandae ratione perspiciatis! Rem repellendus laborum reiciendis et voluptatum exercitationem officia? Atque consequatur molestiae, doloremque cum iusto porro provident dolorem accusantium odit quidem repudiandae, similique quis commodi natus totam eum veritatis architecto eaque! Expedita quis maiores, dolore culpa neque ipsum cumque incidunt in fugit blanditiis impedit ipsam corporis deserunt officiis excepturi, minus perferendis iste? Hic, aperiam? Quisquam doloribus maxime beatae amet ipsum, dicta ipsam expedita quos, nam, quibusdam tempore et voluptatem tenetur praesentium repellat vel libero animi quod nesciunt quasi. Reprehenderit?ipsum dolor sit amet consectetur adipisicing elit. Minima saepe facilis voluptatibus
+            illum expedita! Non iste corporis quibusdam temporibus inventore animi eveniet ab?</div>
+        <div class="box">i am a box </div>
+        <div class="box">i am a box </div>
+    </div>
+</body>
+
+</html>
